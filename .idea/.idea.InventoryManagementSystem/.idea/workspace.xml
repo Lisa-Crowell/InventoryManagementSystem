@@ -5,11 +5,52 @@
     <projectFile profileName="IMS">IMS/IMS.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="071a1fcb-0de2-4587-adb9-84010392e737" name="Changes" comment="update gitignore" />
+    <list default="true" id="071a1fcb-0de2-4587-adb9-84010392e737" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/IMS.CoreBusiness/Inventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IMS.UseCases/Inventories/ViewInventoryByName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IMS.UseCases/PluginInterfaces/IInventoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.InventoryManagementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InventoryManagementSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/IMS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/IMS.WebApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/Counter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/Counter.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/Error.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/Error.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/FetchData.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/FetchData.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/_Host.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/_Host.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Pages/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Shared/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Shared/MainLayout.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Shared/NavMenu.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Shared/NavMenu.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/Shared/SurveyPrompt.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/Shared/SurveyPrompt.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/bootstrap/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/bootstrap/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/FONT-LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/FONT-LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/ICON-LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/ICON-LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IMS/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/IMS.WebApp/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InventoryManagementSystem.sln" beforeDir="false" afterPath="$PROJECT_DIR$/InventoryManagementSystem.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/IMS.WebApp/Shared/MainLayout.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -20,18 +61,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.IMS">
     <configuration name="IMS" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/IMS/IMS.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/IMS.WebApp/IMS.WebApp.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IMS" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -46,7 +87,7 @@
       </method>
     </configuration>
     <configuration name="IMS: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/IMS/IMS.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/IMS.WebApp/IMS.WebApp.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -69,7 +110,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664760977630</updated>
-      <workItem from="1664760982868" duration="751000" />
+      <workItem from="1664760982868" duration="863000" />
+      <workItem from="1664803920989" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="update gitignore">
       <created>1664761404634</created>
@@ -92,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664761667277</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1664761764346</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664761764346</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +163,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
