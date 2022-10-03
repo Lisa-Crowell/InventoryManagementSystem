@@ -438,3 +438,4 @@ FodyWeavers.xsd
 */idea/
 *.xml
 *.json
+*.json*
