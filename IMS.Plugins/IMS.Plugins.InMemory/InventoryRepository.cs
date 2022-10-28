@@ -5,7 +5,7 @@ namespace IMS.Plugins.InMemory;
 
 public class InventoryRepository : IInventoryRepository
 {
-    private List<Inventory> _inventories;
+    private readonly List<Inventory> _inventories;
     
     public InventoryRepository()
     {
@@ -17,7 +17,7 @@ public class InventoryRepository : IInventoryRepository
             new Inventory{InventoryId = 4, InventoryName = "bike body", Quantity = 10, Price = 20},
         };
     }
-    public async Task<IEnumerable<Inventory>> GetInventoriesByNameAsync(string name)
+    public async Task<IEnumerable<Inventory>> GetInventoryByNameAsync(string name)
     {
         if (string.IsNullOrWhiteSpace(name)) return await Task.FromResult(_inventories);
         

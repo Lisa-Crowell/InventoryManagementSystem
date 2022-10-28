@@ -1,4 +1,4 @@
-namespace IMS.Data;
+namespace IMS.WebApp.Data;
 
 public class WeatherForecast
 {

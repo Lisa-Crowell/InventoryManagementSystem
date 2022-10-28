@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-        <RootNamespace>IMS</RootNamespace>
+        <RootNamespace>IMS.WebApp</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

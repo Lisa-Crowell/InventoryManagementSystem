@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using IMS.Data;
+using IMS.WebApp.Data;
 using IMS.Plugins.InMemory;
 using IMS.UseCases.Interfaces;
 using IMS.UseCases.Inventories;
