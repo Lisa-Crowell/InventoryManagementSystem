@@ -17,6 +17,8 @@ builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
 
 builder.Services.AddTransient<IViewInventoryByName, ViewInventoryByName>();
 
+builder.Services.AddScoped<IViewInventoryByName, ViewInventoryByName>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

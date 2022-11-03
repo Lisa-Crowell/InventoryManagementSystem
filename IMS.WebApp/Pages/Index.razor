@@ -2,6 +2,7 @@
 
 @inject IViewInventoryByName ViewInventoryByName
 
+<PageTitle>Inventory</PageTitle>
 
 <ul>
     @foreach(var inv in _inventories)
@@ -17,7 +18,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        
+        _inventories = (await ViewInventoryByName.ExecuteAsync()).ToList();
     }
 
 }
