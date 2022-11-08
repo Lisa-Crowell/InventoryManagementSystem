@@ -1,5 +1,18 @@
-<h3>InventoryList</h3>
+@page "/inventorylist"
+
+<h3>Inventory List</h3>
+<br/>
+<SearchInventoryComponent
+    OnSearchInventory="OnInventorySearch">
+</SearchInventoryComponent>
+<br/>
+<InventoryListComponent SearchTerm="@_searchTerm"></InventoryListComponent>
 
 @code {
+    private string _searchTerm = string.Empty;
     
+    private void OnInventorySearch(string searchTerm)
+    {
+        _searchTerm = searchTerm;
+    }
 }
