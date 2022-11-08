@@ -437,3 +437,4 @@ FodyWeavers.xsd
 
 *./idea/
 *.json
+*.xml
