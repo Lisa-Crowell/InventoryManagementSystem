@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using IMS.WebApp.Data;
 using IMS.Plugins.InMemory;
+using IMS.UseCases;
 using IMS.UseCases.Interfaces;
 using IMS.UseCases.Inventories;
 using IMS.UseCases.PluginInterfaces;
@@ -16,6 +17,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
 
 builder.Services.AddTransient<IViewInventoryByName, ViewInventoryByName>();
+builder.Services.AddTransient<IAddInventory, AddInventory>();
 
 builder.Services.AddScoped<IViewInventoryByName, ViewInventoryByName>();
 
