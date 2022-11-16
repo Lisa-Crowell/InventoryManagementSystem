@@ -27,9 +27,8 @@ public class InventoryRepository : IInventoryRepository
     public Task AddInventoryAsync(Inventory inventory)
     {
         if (_inventories.Any(x => x.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase)))
-        {
-            throw new Exception("Inventory already exists");
-        }
+            return Task.CompletedTask;
+        
         var maxId = _inventories.Max(x => x.InventoryId);
         inventory.InventoryId = maxId + 1;
         
