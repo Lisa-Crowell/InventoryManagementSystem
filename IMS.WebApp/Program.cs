@@ -18,6 +18,7 @@ builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
 
 builder.Services.AddTransient<IViewInventoryByName, ViewInventoryByName>();
 builder.Services.AddTransient<IAddInventory, AddInventory>();
+builder.Services.AddTransient<IEditInventory, EditInventory>();
 
 builder.Services.AddScoped<IViewInventoryByName, ViewInventoryByName>();
 

@@ -1,7 +1,6 @@
 @inject NavigationManager NavigationManager;
 
 @if (_inventoryList != null && _inventoryList.Count > 0)
-
 {
     foreach (var inv in _inventoryList)
     {
@@ -30,5 +29,4 @@
     {
         NavigationManager.NavigateTo($"/inventory/edit/{inv.InventoryId}");
     }
-
 }

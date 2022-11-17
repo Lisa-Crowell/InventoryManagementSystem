@@ -48,12 +48,12 @@
     private async Task SaveInventory()
     {
         await _AddInventory.ExecuteAsync(inventory);
-        NavigationManager.NavigateTo("/inventory");
+        NavigationManager.NavigateTo("/inventorylist");
     }
 
     private void Cancel()
     {
-        NavigationManager.NavigateTo("/inventory");
+        NavigationManager.NavigateTo("/inventorylist");
     }
 
     private NavigationManager _navigationManager;
