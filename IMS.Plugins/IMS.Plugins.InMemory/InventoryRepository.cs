@@ -24,6 +24,11 @@ public class InventoryRepository : IInventoryRepository
         return _inventories.Where(x => x.InventoryName.Contains(name, StringComparison.OrdinalIgnoreCase));
     }
 
+    public async Task<bool> ExistsAsync(Inventory inventory)
+    {
+        return await Task.FromResult(_inventories.Any(x => x.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase)));
+    }
+
     public Task AddInventoryAsync(Inventory inventory)
     {
         if (_inventories.Any(x => x.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase)))
@@ -34,6 +39,18 @@ public class InventoryRepository : IInventoryRepository
         
         _inventories.Add(inventory);
         
+        return Task.CompletedTask;
+    }
+
+    public Task UpdateInventoryAsync(Inventory inventory)
+    {
+        var inventoryToUpdate = _inventories.FirstOrDefault(x => x.InventoryId == inventory.InventoryId);
+        if (inventoryToUpdate != null)
+        {
+            inventoryToUpdate.InventoryName = inventory.InventoryName;
+            inventoryToUpdate.Quantity = inventory.Quantity;
+            inventoryToUpdate.Price = inventory.Price;    
+        }
         return Task.CompletedTask;
     }
 }
