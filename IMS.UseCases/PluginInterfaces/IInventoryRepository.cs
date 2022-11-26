@@ -8,4 +8,5 @@ public interface IInventoryRepository
     Task<bool> ExistsAsync(Inventory inventory);
     Task AddInventoryAsync(Inventory inventory);
     Task UpdateInventoryAsync(Inventory inventory);
+    Task<Inventory> GetInventoryByIdAsync(int inventoryId);
 }

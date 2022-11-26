@@ -44,6 +44,9 @@ public class InventoryRepository : IInventoryRepository
 
     public Task UpdateInventoryAsync(Inventory inventory)
     {
+        if (_inventories.Any(x => x.InventoryId == inventory.InventoryId && x.InventoryName.Equals(inventory.InventoryName, StringComparison.OrdinalIgnoreCase)))
+            return Task.CompletedTask;
+        
         var inventoryToUpdate = _inventories.FirstOrDefault(x => x.InventoryId == inventory.InventoryId);
         if (inventoryToUpdate != null)
         {
@@ -52,5 +55,18 @@ public class InventoryRepository : IInventoryRepository
             inventoryToUpdate.Price = inventory.Price;    
         }
         return Task.CompletedTask;
+    }
+
+    public async Task<Inventory> GetInventoryByIdAsync(int inventoryId)
+    {
+        var inventory = _inventories.FirstOrDefault(x => x.InventoryId == inventoryId);
+        var newInventory = new Inventory
+        {
+            InventoryId = inventory.InventoryId,
+            InventoryName = inventory.InventoryName,
+            Quantity = inventory.Quantity,
+            Price = inventory.Price
+        };
+        return await Task.FromResult(newInventory);
     }
 }
