@@ -1,6 +1,7 @@
 ﻿@page "/inventory"
 
 @inject IViewInventoryByName ViewInventoryByName
+@inject IEditInventory EditInventory
 
 <PageTitle>Inventory</PageTitle>
 
@@ -18,6 +19,10 @@
 
     protected override async Task OnInitializedAsync()
     {
+        var inventory = new Inventory();
+        
+        await EditInventory.ExecuteAsync(inventory);
+        
         _inventories = (await ViewInventoryByName.ExecuteAsync()).ToList();
     }
 
