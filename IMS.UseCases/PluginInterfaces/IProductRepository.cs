@@ -1,8 +1,10 @@
 using IMS.CoreBusiness;
 
-namespace IMS.UseCases.Products.Interfaces;
+namespace IMS.UseCases.PluginInterfaces;
 
 public interface IProductRepository
 {
     Task<IEnumerable<Product>> GetProductsByNameAsync(string name);
+    Task<bool> ExistsAsync(Product product);
+    Task AddInventoryAsync(Product product);
 }
