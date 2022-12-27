@@ -1,0 +1,22 @@
+@foreach (var product in Products)
+{
+    <tr>
+        <td>@product.ProductName</td>
+        <td>@product.Quantity</td>
+        <td>@product.Price.ToString("C")</td>
+        <td>
+            <button 
+                type="button"
+                class="btn bg-light">
+                Edit
+            </button>
+        </td>
+    </tr>
+}
+
+@code {
+    [Parameter]
+    public string SearchTerm { get; set; } = string.Empty;
+    [Parameter]
+    public List<Product> Products { get; set; } = new List<Product>();
+}
