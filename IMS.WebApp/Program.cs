@@ -24,6 +24,7 @@ builder.Services.AddTransient<IEditInventory, EditInventory>();
 builder.Services.AddTransient<IViewInventoryByName, ViewInventoryByName>();
 builder.Services.AddTransient<IViewInventoryById, ViewInventoryById>();
 builder.Services.AddTransient<IViewProductsByName, ViewProductsByName>();
+builder.Services.AddTransient<IAddProduct, AddProduct>();
 
 builder.Services.AddTransient<IViewInventoryByName, ViewInventoryByName>();
 
